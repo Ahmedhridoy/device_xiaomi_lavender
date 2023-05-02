@@ -127,7 +127,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	
 # Extra
 PRODUCT_SYSTEM_PROPERTIES += \
-    sys.use_fifo_ui=1 \
     persist.sys.sf.disable_blurs=1 \
     ro.launcher.blur.appLaunch=0 \
     ro.surface_flinger.supports_background_blur=0 \
@@ -150,4 +149,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
     power.saving.mode=1 \
     pm.sleep_mode=1 \
     ro.vold.umsdirtyratio=20 \
-    ro.ril.disable.power.collapse=0
+    ro.ril.disable.power.collapse=0 \
+    persist.ims.disableADBLogs=1 \
+    persist.ims.disableDebugLogs=1 \
+    persist.ims.disableIMSLogs=1 \
+    persist.ims.disableQXDMLogs=1
