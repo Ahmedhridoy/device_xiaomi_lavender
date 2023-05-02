@@ -154,4 +154,23 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.ims.disableDebugLogs=1 \
     persist.ims.disableIMSLogs=1 \
     persist.ims.disableQXDMLogs=1 \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    debug.cpurend.vsync=false \
+    vendor.display.disable_rotator_downscale=1 \
+    dalvik.vm.dex2oat64.enabled=true \
+    dalvik.vm.dex2oat-filter=quicken \
+    dalvik.vm.image-dex2oat-filter=quicken \
+    dalvik.vm.dex2oat-minidebuginfo=false \
+    dalvik.vm.minidebuginfo=false \
+    pm.dexopt.first-boot=quicken \
+    pm.dexopt.bg-dexopt=everything
+    
+# Configure dex2oat
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.fw.dex2oat_thread_count=8 \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.image-dex2oat-threads=8
