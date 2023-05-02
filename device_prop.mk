@@ -153,4 +153,5 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.ims.disableADBLogs=1 \
     persist.ims.disableDebugLogs=1 \
     persist.ims.disableIMSLogs=1 \
-    persist.ims.disableQXDMLogs=1
+    persist.ims.disableQXDMLogs=1 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
