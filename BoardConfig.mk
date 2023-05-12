@@ -48,6 +48,10 @@ BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
 
+# Vendor Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lavender
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lavender
+
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
