@@ -163,7 +163,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.dex2oat-minidebuginfo=false \
     dalvik.vm.minidebuginfo=false \
     pm.dexopt.first-boot=quicken \
-    pm.dexopt.bg-dexopt=everything
+    pm.dexopt.bg-dexopt=everything \ 
+    persist.vendor.radio.vdp_on_ims_cap=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=2
     
 # Configure dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
