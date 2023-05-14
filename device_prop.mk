@@ -126,7 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.radio.data_con_rprt=1
 	
 # Extra
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.sf.disable_blurs=1 \
     ro.launcher.blur.appLaunch=0 \
     ro.surface_flinger.supports_background_blur=0 \
