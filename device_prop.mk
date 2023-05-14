@@ -126,7 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.radio.data_con_rprt=1
 	
 # Extra
-PRODUCT_VENDOR_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.disable_blurs=1 \
     ro.launcher.blur.appLaunch=0 \
     ro.surface_flinger.supports_background_blur=0 \
@@ -149,7 +149,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     power.saving.mode=1 \
     pm.sleep_mode=1 \
     ro.vold.umsdirtyratio=20 \
-    ro.ril.disable.power.collapse=0 \
+    ro.ril.disable.power.collapse=0
+ # Extra 2
+ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ims.disableADBLogs=1 \
     persist.ims.disableDebugLogs=1 \
     persist.ims.disableIMSLogs=1 \
