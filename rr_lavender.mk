@@ -34,8 +34,6 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 BUILD_RR_WALLPAPERS := true
-# Pixel-charging
-USE_PIXEL_CHARGING := true
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
