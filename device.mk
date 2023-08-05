@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 
+# Android GO
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 
