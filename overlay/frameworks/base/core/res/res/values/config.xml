@@ -63,6 +63,10 @@
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
+     <!-- Minimum screen brightness setting allowed by power manager.
+         The user is forbidden from setting the brightness below this level.  -->
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0039215</item>
+
      <!--Systeminfo for quick settings header -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
