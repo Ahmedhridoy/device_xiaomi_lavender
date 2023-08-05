@@ -33,3 +33,8 @@ on boot
 # Camera ID
     setprop persist.vendor.camera.exif.model "Redmi Note 7"
     setprop persist.sys.exif.model "Redmi Note 7"
+
+on property:vendor.post_boot.parsed=1
+
+# Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
